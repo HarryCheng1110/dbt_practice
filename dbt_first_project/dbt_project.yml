@@ -23,6 +23,9 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
+on-run-start: "{{ insert_audit('on_run', 'run_start') }}"
+on-run-end: "{{ insert_audit('on_run', 'run_end') }}"
+
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
@@ -35,6 +38,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
 models:
+  pre-hook: "{{ insert_audit(this, 'run_start') }}"
+  post-hook: "{{ insert_audit(this, 'run_end') }}"
   dbt_first_project:
     # Config indicated by + and applies to all files under models/example/
     demo:
