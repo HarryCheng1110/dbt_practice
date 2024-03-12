@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: demo
+    description: 'A demo data from Steven'
+    database: demo
+    schema: demoreport
+    tables:
+      - name: users
+        description: 'A demo user table'

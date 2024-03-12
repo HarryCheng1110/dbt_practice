@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: demo__test_seed+
+    tests:
+      - dbt_utils.expression_is_true:
+          expression: "country = 'Taiwan' OR login IN ('1', '2', '3')"

@@ -1,0 +1,93 @@
+[0m16:54:04.352910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1f1e3d3100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1f1c823520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1f1c8234c0>]}
+
+
+============================== 16:54:04.355857 | 5ad01237-5f6b-4c93-8f79-93b2c0577e76 ==============================
+[0m16:54:04.355857 [info ] [MainThread]: Running with dbt=1.7.9
+[0m16:54:04.356719 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/data-taipei/.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init dbt_first_project', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:54:04.357650 [debug] [MainThread]: Starter project path: /home/data-taipei/pythonHarry/harry/lib/python3.10/site-packages/dbt/include/starter_project
+[0m16:54:04.360105 [info ] [MainThread]: 
+Your new dbt project "dbt_first_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:54:04.361546 [info ] [MainThread]: Setting up your profile.
+[0m16:58:41.065220 [info ] [MainThread]: Profile dbt_first_project written to /home/data-taipei/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:58:41.066545 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 276.76343, "process_user_time": 2.379091, "process_kernel_time": 0.087793, "process_mem_max_rss": "95728", "process_in_blocks": "8", "process_out_blocks": "80"}
+[0m16:58:41.067472 [debug] [MainThread]: Command `dbt init` succeeded at 16:58:41.067296 after 276.76 seconds
+[0m16:58:41.068145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1f1e3d3100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1f1c8cd9f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1f1c8235b0>]}
+[0m16:58:41.068662 [debug] [MainThread]: Flushing usage events
+[0m17:00:46.001250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa3c866ef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa3acb75e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa3acb7580>]}
+
+
+============================== 17:00:46.004195 | 85d55c2d-1e19-4a2a-ac49-e90870c6db8a ==============================
+[0m17:00:46.004195 [info ] [MainThread]: Running with dbt=1.7.9
+[0m17:00:46.004829 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/home/data-taipei/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m17:00:46.005446 [info ] [MainThread]: dbt version: 1.7.9
+[0m17:00:46.006014 [info ] [MainThread]: python version: 3.10.12
+[0m17:00:46.006446 [info ] [MainThread]: python path: /home/data-taipei/pythonHarry/harry/bin/python
+[0m17:00:46.006852 [info ] [MainThread]: os info: Linux-5.15.0-91-generic-x86_64-with-glibc2.35
+[0m17:00:46.107449 [info ] [MainThread]: Using profiles dir at /home/data-taipei/.dbt
+[0m17:00:46.108431 [info ] [MainThread]: Using profiles.yml file at /home/data-taipei/.dbt/profiles.yml
+[0m17:00:46.109151 [info ] [MainThread]: Using dbt_project.yml file at /home/data-taipei/pythonHarry/dbt_practice/dbt_practice/dbt_project.yml
+[0m17:00:46.109909 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m17:00:46.111062 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.16018854, "process_user_time": 2.388229, "process_kernel_time": 0.112672, "process_mem_max_rss": "96416", "process_in_blocks": "352", "process_out_blocks": "16", "command_success": false}
+[0m17:00:46.112013 [debug] [MainThread]: Command `dbt debug` failed at 17:00:46.111840 after 0.16 seconds
+[0m17:00:46.112681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa3c866ef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa3ad61570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa3acb7700>]}
+[0m17:00:46.113374 [debug] [MainThread]: Flushing usage events
+[0m16:26:54.700844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc68b8f1690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc689f83b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc689f83340>]}
+
+
+============================== 16:26:54.704147 | b478a1e4-51ad-4ec3-ba9d-26631f6c7c1c ==============================
+[0m16:26:54.704147 [info ] [MainThread]: Running with dbt=1.7.9
+[0m16:26:54.704787 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/data-taipei/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:26:58.484220 [debug] [MainThread]: Starter project path: /home/data-taipei/pythonHarry/harry/lib/python3.10/site-packages/dbt/include/starter_project
+[0m16:26:58.487939 [info ] [MainThread]: 
+Your new dbt project "test" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:26:58.488509 [info ] [MainThread]: Setting up your profile.
+[0m16:27:05.706046 [info ] [MainThread]: Profile test written to /home/data-taipei/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:27:05.707226 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 11.0567665, "process_user_time": 2.282129, "process_kernel_time": 0.076108, "process_mem_max_rss": "94548", "process_in_blocks": "144", "process_out_blocks": "88"}
+[0m16:27:05.707893 [debug] [MainThread]: Command `dbt init` succeeded at 16:27:05.707732 after 11.06 seconds
+[0m16:27:05.708355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc68b8f1690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc689f811e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc689f82950>]}
+[0m16:27:05.708819 [debug] [MainThread]: Flushing usage events
+[0m15:55:30.605036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f22787ed660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2276e7fe80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2276e7ca00>]}
+
+
+============================== 15:55:30.608953 | 193b8aac-7ea9-44ac-9662-403e402ca001 ==============================
+[0m15:55:30.608953 [info ] [MainThread]: Running with dbt=1.7.9
+[0m15:55:30.609576 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/home/data-taipei/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:55:30.610133 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/data-taipei/pythonHarry/dbt_practice/dbt_practice/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:55:30.611218 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.060761243, "process_user_time": 2.30714, "process_kernel_time": 0.112146, "process_mem_max_rss": "90108", "process_in_blocks": "26904", "process_out_blocks": "8", "command_success": false}
+[0m15:55:30.611867 [debug] [MainThread]: Command `dbt run` failed at 15:55:30.611707 after 0.06 seconds
+[0m15:55:30.612314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f22787ed660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2276e7f430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2276e7e0b0>]}
+[0m15:55:30.612773 [debug] [MainThread]: Flushing usage events
